@@ -11,7 +11,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch</span><br><span class="line">&#123;</span><br><span class="line">    if ( [NSStringFromClass([touch.view class]) isEqualToString:@&quot;nameOfSuperView&quot;] ) &#123;</span><br><span class="line">        return YES;</span><br><span class="line">    &#125;</span><br><span class="line">    return  NO;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>判断当前 touch 是否是真的点到了父容器还是点在 tableView 上。只有点到父容器才接收 touch 事件。</p>
 <p>然而这一段代码还是比较奇葩，或许有更简洁的办法也未可知。</p>
-</div><!-- comment system--><div class="container"><hr><div data-thread-key="2016/05/26/UItableView-与手势识别的坑/" data-title="UITableView 与手势识别的坑" data-url="http://yoursite.com/2016/05/26/UItableView-与手势识别的坑/" class="ds-thread"></div><script>var duoshuoQuery = {short_name:'fminorwang.github.io'};
+</div><!-- comment system--><div class="container"><hr><div data-thread-key="2016/05/26/UItableView-与手势识别的坑/" data-title="UITableView 与手势识别的坑" data-url="http://yoursite.com/2016/05/26/UItableView-与手势识别的坑/" class="ds-thread"></div><script>var duoshuoQuery = {short_name:'fminor'};
 (function() {
     var ds = document.createElement('script');
     ds.type = 'text/javascript';ds.async = true;
